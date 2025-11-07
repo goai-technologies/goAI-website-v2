@@ -21,6 +21,7 @@ interface BlogPost {
 export function BlogPage() {
   const [posts, setPosts] = useState<BlogPost[]>([]);
   const [loading, setLoading] = useState(true);
+  const [error, setError] = useState<string | null>(null);
   const [selectedCategory, setSelectedCategory] = useState<string>('All');
   const heroSection = useScrollAnimation();
   const postsSection = useScrollAnimation();
@@ -31,6 +32,14 @@ export function BlogPage() {
 
   async function fetchPosts() {
     try {
+      // Check if Supabase is properly configured
+      const supabaseUrl = import.meta.env.VITE_SUPABASE_URL;
+      const supabaseKey = import.meta.env.VITE_SUPABASE_ANON_KEY;
+      
+      if (!supabaseUrl || !supabaseKey || supabaseUrl.includes('placeholder')) {
+        throw new Error('Supabase configuration is missing. Please set VITE_SUPABASE_URL and VITE_SUPABASE_ANON_KEY environment variables.');
+      }
+
       const { data, error } = await supabase
         .from('blog_posts')
         .select('*')
@@ -39,8 +48,10 @@ export function BlogPage() {
 
       if (error) throw error;
       setPosts(data || []);
+      setError(null);
     } catch (error) {
       console.error('Error fetching posts:', error);
+      setError(error instanceof Error ? error.message : 'Failed to load blog posts. Please check your Supabase configuration.');
     } finally {
       setLoading(false);
     }
@@ -204,7 +215,19 @@ export function BlogPage() {
             </div>
           )}
 
-          {!loading && filteredPosts.length === 0 && (
+          {error && (
+            <div className="text-center py-20">
+              <div className="bg-red-500/10 border border-red-500/30 rounded-2xl p-8 max-w-2xl mx-auto">
+                <p className="text-xl text-red-400 font-semibold mb-2">Error Loading Blog Posts</p>
+                <p className="text-slate-300 mb-4">{error}</p>
+                <p className="text-sm text-slate-400">
+                  Make sure VITE_SUPABASE_URL and VITE_SUPABASE_ANON_KEY are set in your Vercel environment variables.
+                </p>
+              </div>
+            </div>
+          )}
+
+          {!loading && !error && filteredPosts.length === 0 && (
             <div className="text-center py-20">
               <p className="text-2xl text-slate-400">No posts found in this category</p>
             </div>
