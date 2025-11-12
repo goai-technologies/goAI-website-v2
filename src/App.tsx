@@ -12,6 +12,9 @@ import { BlogPage } from './pages/BlogPage';
 import { BlogPostPage } from './pages/BlogPostPage';
 import { TeamPage } from './pages/TeamPage';
 import { ContactPage } from './pages/ContactPage';
+import { PrivacyPolicyPage } from './pages/PrivacyPolicyPage';
+import { TermsOfServicePage } from './pages/TermsOfServicePage';
+import { CookiePolicyPage } from './pages/CookiePolicyPage';
 import { FinanceAICaseStudy } from './pages/case-studies/FinanceAICaseStudy';
 import { MedConnectCaseStudy } from './pages/case-studies/MedConnectCaseStudy';
 import { ShopFlowCaseStudy } from './pages/case-studies/ShopFlowCaseStudy';
@@ -38,6 +41,9 @@ function App() {
           <Route path="/blog/:slug" element={<BlogPostPage />} />
           <Route path="/team" element={<TeamPage />} />
           <Route path="/contact" element={<ContactPage />} />
+          <Route path="/privacy-policy" element={<PrivacyPolicyPage />} />
+          <Route path="/terms-of-service" element={<TermsOfServicePage />} />
+          <Route path="/cookie-policy" element={<CookiePolicyPage />} />
           <Route path="/case-studies/financeaidashboard" element={<FinanceAICaseStudy />} />
           <Route path="/case-studies/medconnectplatform" element={<MedConnectCaseStudy />} />
           <Route path="/case-studies/shopflowcommerce" element={<ShopFlowCaseStudy />} />

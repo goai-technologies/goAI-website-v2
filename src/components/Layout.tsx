@@ -111,9 +111,9 @@ export function Layout({ children }: { children: React.ReactNode }) {
           <div className="pt-8 border-t border-slate-800 flex flex-col md:flex-row items-center justify-between gap-4">
             <p className="text-slate-400">© 2025 goAI. Ship Fast or Die Trying.</p>
             <div className="flex gap-6 text-slate-400 text-sm">
-              <Link to="/contact" className="hover:text-cyan-400 transition-colors">Privacy Policy</Link>
-              <Link to="/contact" className="hover:text-cyan-400 transition-colors">Terms of Service</Link>
-              <Link to="/contact" className="hover:text-cyan-400 transition-colors">Cookie Policy</Link>
+              <Link to="/privacy-policy" className="hover:text-cyan-400 transition-colors">Privacy Policy</Link>
+              <Link to="/terms-of-service" className="hover:text-cyan-400 transition-colors">Terms of Service</Link>
+              <Link to="/cookie-policy" className="hover:text-cyan-400 transition-colors">Cookie Policy</Link>
             </div>
           </div>
         </div>
