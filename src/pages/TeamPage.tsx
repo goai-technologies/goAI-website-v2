@@ -177,11 +177,11 @@ export function TeamPage() {
                 We're always looking for exceptional talent. If you ship fast and care about quality, let's talk.
               </p>
               <a
-                href="mailto:careers@goai.dev"
+                href="mailto:info@goai.solutions"
                 className="inline-flex items-center gap-2 bg-gradient-to-r from-cyan-500 to-blue-500 px-10 py-5 rounded-full font-bold text-lg hover:shadow-2xl hover:shadow-cyan-500/50 transition-all hover:scale-105"
               >
                 <Mail className="w-6 h-6" />
-                careers@goai.dev
+                info@goai.solutions
               </a>
             </div>
           </div>

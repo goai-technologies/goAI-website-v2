@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { Mail, Linkedin, Twitter, Github, Calendar, ChevronDown } from 'lucide-react';
+import { Mail, Linkedin, Github, Calendar, ChevronDown } from 'lucide-react';
 import { Logo } from './Logo';
 import { CalendarBooking } from './CalendarBooking';
 import { ScrollToSection } from './ScrollToSection';
@@ -75,13 +75,10 @@ export function Layout({ children }: { children: React.ReactNode }) {
                 Engineering ninjas delivering rapid solutions at breakneck speed. From MVP to scale, we ship fast or die trying.
               </p>
               <div className="flex gap-4">
-                <a href="https://twitter.com/goai_solutions" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-slate-800 rounded-full flex items-center justify-center hover:bg-cyan-400 hover:scale-110 transition-all group">
-                  <Twitter className="w-5 h-5 text-slate-400 group-hover:text-slate-900" />
-                </a>
-                <a href="https://linkedin.com/company/goai-solutions" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-slate-800 rounded-full flex items-center justify-center hover:bg-cyan-400 hover:scale-110 transition-all group">
+                <a href="https://www.linkedin.com/company/goai-technologies" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-slate-800 rounded-full flex items-center justify-center hover:bg-cyan-400 hover:scale-110 transition-all group">
                   <Linkedin className="w-5 h-5 text-slate-400 group-hover:text-slate-900" />
                 </a>
-                <a href="https://github.com/goai-solutions" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-slate-800 rounded-full flex items-center justify-center hover:bg-cyan-400 hover:scale-110 transition-all group">
+                <a href="https://github.com/goai-technologies" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-slate-800 rounded-full flex items-center justify-center hover:bg-cyan-400 hover:scale-110 transition-all group">
                   <Github className="w-5 h-5 text-slate-400 group-hover:text-slate-900" />
                 </a>
                 <Link to="/contact" className="w-10 h-10 bg-slate-800 rounded-full flex items-center justify-center hover:bg-cyan-400 hover:scale-110 transition-all group">

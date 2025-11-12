@@ -65,7 +65,7 @@ export function ContactPage() {
         title="Contact Us - Start Shipping in 48 Hours"
         description="Ready to accelerate your product? Book a call and we'll start shipping in 48 hours. Fast response guaranteed."
         keywords="contact goai, book consultation, rapid development inquiry, mvp consultation"
-        url="https://goai.dev/contact"
+        url="https://goai.solutions/contact"
       />
       <div className="min-h-screen bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white">
       <section className="pt-32 pb-20 px-6" ref={heroSection.ref}>
@@ -120,8 +120,8 @@ export function ContactPage() {
                   </div>
                   <div>
                     <h3 className="font-bold text-lg mb-2">Email</h3>
-                    <a href="mailto:hello@goai.dev" className="text-cyan-400 hover:text-cyan-300 transition-colors text-lg">
-                      hello@goai.dev
+                    <a href="mailto:info@goai.solutions" className="text-cyan-400 hover:text-cyan-300 transition-colors text-lg">
+                      info@goai.solutions
                     </a>
                   </div>
                 </div>
@@ -132,8 +132,8 @@ export function ContactPage() {
                   </div>
                   <div>
                     <h3 className="font-bold text-lg mb-2">Phone</h3>
-                    <a href="tel:+1-555-SHIP-NOW" className="text-cyan-400 hover:text-cyan-300 transition-colors text-lg">
-                      +1 (555) SHIP-NOW
+                    <a href="tel:+17865301555" className="text-cyan-400 hover:text-cyan-300 transition-colors text-lg">
+                      +1 (786)-530-1555
                     </a>
                   </div>
                 </div>

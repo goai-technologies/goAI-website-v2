@@ -1,4 +1,4 @@
-import { Zap, Gauge, Target, Clock, Users, Layers, Bot, Lightbulb, ArrowRight, CheckCircle2, Star, TrendingUp, Rocket as RocketIcon, ExternalLink, Mail, Linkedin, Twitter, Github, Calendar, Code, RefreshCw, Server, Brain } from 'lucide-react';
+import { Zap, Gauge, Target, Clock, Users, Layers, Bot, Lightbulb, ArrowRight, CheckCircle2, Star, TrendingUp, Rocket as RocketIcon, ExternalLink, Mail, Calendar, Code, RefreshCw, Server, Brain } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { useScrollAnimation } from '../hooks/useScrollAnimation';
 import { AnimatedCounter } from '../components/AnimatedCounter';
