@@ -1,0 +1,24 @@
+<svg width="200" height="80" viewBox="0 0 200 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Clasped hands forming heart -->
+  <g transform="translate(20, 10)">
+    <!-- Left hand (brown) -->
+    <path d="M15 25 Q10 20 5 25 Q5 30 10 35 Q15 40 20 35" fill="#92400E" opacity="0.8"/>
+    <!-- Right hand (green) -->
+    <path d="M25 25 Q30 20 35 25 Q35 30 30 35 Q25 40 20 35" fill="#16A34A" opacity="0.8"/>
+    <!-- Wheat stalk -->
+    <path d="M5 25 L0 15 M5 20 L-2 10" stroke="#92400E" stroke-width="1.5" stroke-linecap="round"/>
+    <!-- Spoon -->
+    <path d="M35 25 L42 15 M38 20 L45 12" stroke="#16A34A" stroke-width="1.5" stroke-linecap="round"/>
+    <ellipse cx="40" cy="14" rx="3" ry="2" fill="#16A34A"/>
+    <!-- Grains falling -->
+    <ellipse cx="12" cy="38" rx="2" ry="2.5" fill="#92400E" opacity="0.6"/>
+    <ellipse cx="18" cy="42" rx="1.5" ry="2" fill="#92400E" opacity="0.6"/>
+    <ellipse cx="22" cy="40" rx="2" ry="2.5" fill="#92400E" opacity="0.6"/>
+  </g>
+  <!-- JIVABHUMI text -->
+  <text x="60" y="35" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="start">
+    <tspan fill="#16A34A">JIVA</tspan>
+    <tspan fill="#92400E">BHUMI</tspan>
+  </text>
+  <text x="60" y="52" font-family="Arial, sans-serif" font-size="10" fill="#94A3B8">safe food for all</text>
+</svg>

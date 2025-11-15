@@ -4,6 +4,8 @@ import { useScrollAnimation } from '../hooks/useScrollAnimation';
 import { AnimatedCounter } from '../components/AnimatedCounter';
 import { NinjaAnimation } from '../components/NinjaAnimation';
 import { CalendarBooking } from '../components/CalendarBooking';
+import { LogoScroller } from '../components/LogoScroller';
+import { companyLogos } from '../constants/logos';
 import { SEO } from '../components/SEO';
 
 export function HomePage() {
@@ -153,26 +155,7 @@ export function HomePage() {
           <p className="text-center text-slate-400 text-sm font-semibold mb-8 tracking-wider">
             TRUSTED BY COMPANIES MOVING AT VELOCITY
           </p>
-          <div className="grid grid-cols-2 md:grid-cols-6 gap-8 items-center justify-items-center opacity-60 hover:opacity-100 transition-opacity">
-            <div className="flex items-center justify-center">
-              <img src="https://images.pexels.com/photos/6476589/pexels-photo-6476589.jpeg?auto=compress&cs=tinysrgb&w=200&h=80" alt="TechFlow" className="h-12 w-auto grayscale hover:grayscale-0 transition-all object-contain" />
-            </div>
-            <div className="flex items-center justify-center">
-              <img src="https://images.pexels.com/photos/267350/pexels-photo-267350.jpeg?auto=compress&cs=tinysrgb&w=200&h=80" alt="DataPulse" className="h-12 w-auto grayscale hover:grayscale-0 transition-all object-contain" />
-            </div>
-            <div className="flex items-center justify-center">
-              <img src="https://images.pexels.com/photos/1181406/pexels-photo-1181406.jpeg?auto=compress&cs=tinysrgb&w=200&h=80" alt="CloudNine" className="h-12 w-auto grayscale hover:grayscale-0 transition-all object-contain" />
-            </div>
-            <div className="flex items-center justify-center">
-              <img src="https://images.pexels.com/photos/1181354/pexels-photo-1181354.jpeg?auto=compress&cs=tinysrgb&w=200&h=80" alt="FinanceAI" className="h-12 w-auto grayscale hover:grayscale-0 transition-all object-contain" />
-            </div>
-            <div className="flex items-center justify-center">
-              <img src="https://images.pexels.com/photos/3184357/pexels-photo-3184357.jpeg?auto=compress&cs=tinysrgb&w=200&h=80" alt="ShopFlow" className="h-12 w-auto grayscale hover:grayscale-0 transition-all object-contain" />
-            </div>
-            <div className="flex items-center justify-center">
-              <img src="https://images.pexels.com/photos/3184339/pexels-photo-3184339.jpeg?auto=compress&cs=tinysrgb&w=200&h=80" alt="RocketLabs" className="h-12 w-auto grayscale hover:grayscale-0 transition-all object-contain" />
-            </div>
-          </div>
+          <LogoScroller logos={companyLogos} speed="normal" />
           <div className="mt-12 text-center">
             <div className="inline-flex items-center gap-8">
               <div className="flex items-center gap-2">
