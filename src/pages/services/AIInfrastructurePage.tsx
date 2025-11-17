@@ -3,6 +3,8 @@ import { useScrollAnimation } from '../../hooks/useScrollAnimation';
 import { AnimatedCounter } from '../../components/AnimatedCounter';
 import { CalendarBooking } from '../../components/CalendarBooking';
 import { SEO } from '../../components/SEO';
+import { LogoScroller } from '../../components/LogoScroller';
+import { companyLogos } from '../../constants/logos';
 
 export function AIInfrastructurePage() {
   const heroSection = useScrollAnimation();
@@ -133,6 +135,15 @@ export function AIInfrastructurePage() {
                 <div className="text-slate-400">Monitoring</div>
               </div>
             </div>
+          </div>
+        </section>
+
+        <section className="py-16 px-6 bg-slate-900/80 border-y border-slate-700/50">
+          <div className="max-w-7xl mx-auto">
+            <p className="text-center text-slate-400 text-sm font-semibold mb-8 tracking-wider">
+              TRUSTED BY COMPANIES MOVING AT VELOCITY
+            </p>
+            <LogoScroller logos={companyLogos} speed="normal" />
           </div>
         </section>
 

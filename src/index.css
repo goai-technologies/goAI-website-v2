@@ -536,4 +536,26 @@
       opacity: 0;
     }
   }
+
+  /* Logo Scroller Animations */
+  .animate-scroll {
+    animation: scrollRightToLeft 30s linear infinite;
+  }
+
+  .animate-scroll-slow {
+    animation: scrollRightToLeft 45s linear infinite;
+  }
+
+  .animate-scroll-fast {
+    animation: scrollRightToLeft 20s linear infinite;
+  }
+
+  @keyframes scrollRightToLeft {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
 }

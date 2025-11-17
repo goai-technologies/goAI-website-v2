@@ -1,0 +1,13 @@
+<svg width="200" height="80" viewBox="0 0 200 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Hexagonal graphic -->
+  <g transform="translate(20, 20)">
+    <path d="M30 0 L50 0 L60 17.32 L50 34.64 L30 34.64 L20 17.32 Z" fill="#818CF8" opacity="0.3"/>
+    <path d="M25 8.66 L35 8.66 L40 17.32 L35 25.98 L25 25.98 L20 17.32 Z" fill="#34D399" opacity="0.3"/>
+    <path d="M30 0 L50 0 L60 17.32 L50 34.64 L30 34.64 L20 17.32 Z" fill="none" stroke="#818CF8" stroke-width="1.5"/>
+  </g>
+  <!-- LLMredi text -->
+  <text x="90" y="45" font-family="Arial, sans-serif" font-size="26" font-weight="bold" text-anchor="middle">
+    <tspan fill="#818CF8">LLM</tspan>
+    <tspan fill="#34D399">redi</tspan>
+  </text>
+</svg>

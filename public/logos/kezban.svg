@@ -1,0 +1,16 @@
+<svg width="200" height="80" viewBox="0 0 200 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Stylized symbol -->
+  <path d="M20 20 L30 10 L40 20 L50 10 L60 20 L50 30 L40 20 L30 30 Z" fill="url(#kezbanGradient)" opacity="0.9"/>
+  <defs>
+    <linearGradient id="kezbanGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#14B8A6;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#06B6D4;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#84CC16;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <!-- Kezban text -->
+  <text x="80" y="35" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#E2E8F0">K</text>
+  <text x="95" y="35" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#E2E8F0">e</text>
+  <text x="108" y="35" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#06B6D4">z</text>
+  <text x="120" y="35" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#E2E8F0">ban</text>
+</svg>

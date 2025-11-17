@@ -81,15 +81,14 @@ export function SEO({
           "url": url,
           "logo": image,
           "sameAs": [
-            "https://twitter.com/goai_dev",
-            "https://linkedin.com/company/goai",
-            "https://github.com/goai"
+            "https://www.linkedin.com/company/goai-technologies",
+            "https://github.com/goai-technologies"
           ],
           "contactPoint": {
             "@type": "ContactPoint",
-            "telephone": "+1-555-SHIP-NOW",
+            "telephone": "+1-786-530-1555",
             "contactType": "Sales",
-            "email": "hello@goai.dev",
+            "email": "info@goai.solutions",
             "areaServed": "US",
             "availableLanguage": "English"
           },
