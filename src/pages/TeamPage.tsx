@@ -165,7 +165,7 @@ export function TeamPage() {
         </div>
       </section>
 
-      <section className="py-20 px-6">
+      <section id="careers" className="py-20 px-6">
         <div className="max-w-4xl mx-auto text-center">
           <div className="bg-gradient-to-br from-slate-800 to-slate-900 p-12 rounded-3xl border border-slate-700 relative overflow-hidden">
             <div className="absolute inset-0 bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-500 opacity-10 animate-gradient"></div>

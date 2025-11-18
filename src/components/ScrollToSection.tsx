@@ -16,18 +16,20 @@ export function ScrollToSection({ to, className, children }: ScrollToSectionProp
 
     const [path, hash] = to.split('#');
 
-    if (path === '/' && location.pathname === '/') {
+    if (path === location.pathname && hash) {
+      // Same page, scroll to section
       const element = document.getElementById(hash);
       if (element) {
         element.scrollIntoView({ behavior: 'smooth', block: 'start' });
       }
     } else {
+      // Different page, navigate and scroll after navigation
       navigate(to);
     }
   };
 
   useEffect(() => {
-    if (location.pathname === '/' && location.hash) {
+    if (location.hash) {
       setTimeout(() => {
         const element = document.getElementById(location.hash.slice(1));
         if (element) {
