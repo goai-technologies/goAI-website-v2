@@ -52,7 +52,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
               </div>
             </div>
             <Link to="/team" className="hover:text-cyan-400 transition-all hover:scale-110">Team</Link>
-            <Link to="/blog" className="hover:text-cyan-400 transition-all hover:scale-110">Blog</Link>
+            {/* <Link to="/blog" className="hover:text-cyan-400 transition-all hover:scale-110">Blog</Link> */}
             <CalendarBooking
               buttonText="Book a Call"
               className="bg-gradient-to-r from-cyan-500 to-blue-500 px-6 py-2 rounded-full font-semibold hover:shadow-lg hover:shadow-cyan-500/50 transition-all hover:scale-105 animate-pulse-glow inline-flex items-center gap-2"
@@ -101,8 +101,8 @@ export function Layout({ children }: { children: React.ReactNode }) {
               <h3 className="text-white font-bold mb-4">Company</h3>
               <ul className="space-y-2">
                 <li><Link to="/team" className="text-slate-400 hover:text-cyan-400 transition-colors">Team</Link></li>
-                <li><Link to="/contact" className="text-slate-400 hover:text-cyan-400 transition-colors">Careers</Link></li>
-                <li><Link to="/blog" className="text-slate-400 hover:text-cyan-400 transition-colors">Blog</Link></li>
+                <li><ScrollToSection to="/team#careers" className="text-slate-400 hover:text-cyan-400 transition-colors">Careers</ScrollToSection></li>
+                {/* <li><Link to="/blog" className="text-slate-400 hover:text-cyan-400 transition-colors">Blog</Link></li> */}
                 <li><Link to="/contact" className="text-slate-400 hover:text-cyan-400 transition-colors">Contact</Link></li>
               </ul>
             </div>

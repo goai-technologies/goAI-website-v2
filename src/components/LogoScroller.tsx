@@ -36,12 +36,6 @@ export function LogoScroller({ logos, speed = 'normal' }: LogoScrollerProps) {
 
 function LogoItem({ logo }: { logo: { name: string; src: string; alt: string } }) {
   const [imageError, setImageError] = useState(false);
-  
-  // Apply smaller max-width for Itron logo to match other logos
-  const isItron = logo.name.toLowerCase() === 'itron';
-  const imgClassName = isItron 
-    ? "h-full w-full object-contain opacity-90 hover:opacity-100 transition-opacity max-w-[140px] md:max-w-[160px]"
-    : "h-full w-full object-contain opacity-90 hover:opacity-100 transition-opacity";
 
   return (
     <div className="flex-shrink-0 flex items-center justify-center h-28 md:h-32 w-64 md:w-80 px-8">
@@ -49,7 +43,7 @@ function LogoItem({ logo }: { logo: { name: string; src: string; alt: string } }
         <img
           src={logo.src}
           alt={logo.alt}
-          className={imgClassName}
+          className="h-full w-full object-contain opacity-90 hover:opacity-100 transition-opacity"
           loading="lazy"
           onError={() => setImageError(true)}
         />

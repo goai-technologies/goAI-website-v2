@@ -8,8 +8,8 @@ import { EnterpriseFastTrackPage } from './pages/EnterpriseFastTrackPage';
 import { AIPioneersPage } from './pages/AIPioneersPage';
 import { NonTechFoundersPage } from './pages/NonTechFoundersPage';
 import { TechTeamsPage } from './pages/TechTeamsPage';
-import { BlogPage } from './pages/BlogPage';
-import { BlogPostPage } from './pages/BlogPostPage';
+// import { BlogPage } from './pages/BlogPage';
+// import { BlogPostPage } from './pages/BlogPostPage';
 import { TeamPage } from './pages/TeamPage';
 import { ContactPage } from './pages/ContactPage';
 import { PrivacyPolicyPage } from './pages/PrivacyPolicyPage';
@@ -37,8 +37,8 @@ function App() {
           <Route path="/ai-pioneers" element={<AIPioneersPage />} />
           <Route path="/non-tech-founders" element={<NonTechFoundersPage />} />
           <Route path="/tech-teams" element={<TechTeamsPage />} />
-          <Route path="/blog" element={<BlogPage />} />
-          <Route path="/blog/:slug" element={<BlogPostPage />} />
+          {/* <Route path="/blog" element={<BlogPage />} /> */}
+          {/* <Route path="/blog/:slug" element={<BlogPostPage />} /> */}
           <Route path="/team" element={<TeamPage />} />
           <Route path="/contact" element={<ContactPage />} />
           <Route path="/privacy-policy" element={<PrivacyPolicyPage />} />

@@ -37,7 +37,11 @@ export function BlogPage() {
       const supabaseKey = import.meta.env.VITE_SUPABASE_ANON_KEY;
       
       if (!supabaseUrl || !supabaseKey || supabaseUrl.includes('placeholder')) {
-        throw new Error('Supabase configuration is missing. Please set VITE_SUPABASE_URL and VITE_SUPABASE_ANON_KEY environment variables.');
+        // Gracefully handle missing Supabase config - show empty state instead of error
+        setPosts([]);
+        setError(null);
+        setLoading(false);
+        return;
       }
 
       const { data, error } = await supabase
@@ -221,7 +225,7 @@ export function BlogPage() {
                 <p className="text-xl text-red-400 font-semibold mb-2">Error Loading Blog Posts</p>
                 <p className="text-slate-300 mb-4">{error}</p>
                 <p className="text-sm text-slate-400">
-                  Make sure VITE_SUPABASE_URL and VITE_SUPABASE_ANON_KEY are set in your Vercel environment variables.
+                  Make sure VITE_SUPABASE_URL and VITE_SUPABASE_ANON_KEY are set in your environment variables.
                 </p>
               </div>
             </div>

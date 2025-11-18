@@ -23,21 +23,6 @@ export const companyLogos = [
     name: 'National Grid',
     src: '/logos/national-grid.svg',
     alt: 'National Grid Logo'
-  },
-  {
-    name: 'Urbint',
-    src: '/logos/urbint.svg',
-    alt: 'Urbint Logo'
-  },
-  {
-    name: 'iRestore',
-    src: '/logos/irestore.svg',
-    alt: 'iRestore Logo'
-  },
-  {
-    name: 'Itron',
-    src: '/logos/itron.svg',
-    alt: 'Itron Logo'
   }
 ];
 
