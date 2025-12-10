@@ -104,6 +104,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
                 <li><ScrollToSection to="/team#careers" className="text-slate-400 hover:text-cyan-400 transition-colors">Careers</ScrollToSection></li>
                 {/* <li><Link to="/blog" className="text-slate-400 hover:text-cyan-400 transition-colors">Blog</Link></li> */}
                 <li><Link to="/contact" className="text-slate-400 hover:text-cyan-400 transition-colors">Contact</Link></li>
+                <li><Link to="/llm-readme" className="text-slate-400 hover:text-cyan-400 transition-colors">For AI & Search</Link></li>
               </ul>
             </div>
           </div>
